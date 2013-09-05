@@ -27,15 +27,30 @@ body {
 header {
     background-color: #373738;
     height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%
 }
-section {
-    background-color: white;
+#panels{
+    margin-top: 100px;
     height: 500px;
-
+    width: 3600px;
+    background-color: white;
+    overflow: hidden;
+}
+#map{
+    position: fixed;
+    bottom: 0;
+}
+#map img {
+    position: fixed;
+    bottom: 0;
+    height: 35%;
 }
 
 article {
     float: left;
+    width: 600px;
 }
 footer {
     background-color: #373738;

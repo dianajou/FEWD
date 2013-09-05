@@ -3,13 +3,13 @@ var stations = [
 		name:'Sheung Wan',
 		coordinates: [48.40129,8.3823],
 		sequence:67,
-		media:'sw.mp4',
+		media:'images/tram.jpg',
 		caption:'Fruits of the seas',
 	},{
 		name:'Sheung Wan',
 		coordinates: [48.40129,8.3823],
 		sequence:67,
-		media:'sw.mp4',
+		media:'images/tram.jpg',
 		caption:'Fruits of the seas',
 	}
 ]
@@ -52,6 +52,11 @@ function Station(obj){
 			this.sequence - s.sequence
 		})
 	}
+
+	Station.prototype.panel = function() {
+		stationHTML = '<section><h2>' + this.name + '</h2><img class="stationImage">' + this.media + '</img><p>'+ this.caption+ '</p></setion>'
+		$('#panels').append(stationHTML)
+	};
 }
 
 
