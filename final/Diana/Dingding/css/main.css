@@ -22,30 +22,51 @@ body {
     font-size: 1em;
     line-height: 1.4;
     color: white;
+     background-color: #373738;
+     font-family: 'Flamenco', cursive;
 }
 
 header {
     background-color: #373738;
-    height: 100px;
+    height: 65px;
     position: fixed;
     top: 0;
     width: 100%
 }
+
+header p {
+    float: left;
+    padding-left: 20px;
+    margin-left: 80%;
+}
+
+#intro {
+    height: 800px;
+    width: 100%;
+    background-color: #373738;
+    background-image:url('../images/tram1-5.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+
+}
 #panels{
     margin-top: 100px;
-    height: 500px;
+    height: 600px;
     width: 3600px;
-    background-color: white;
     overflow: hidden;
+    background-color: #373738;
+
 }
 #map{
     position: fixed;
-    bottom: 0;
+    background-image:url('../images/map.png');
+
+
 }
-#map img {
-    position: fixed;
-    bottom: 0;
-    height: 35%;
+
+#map img{
+
 }
 
 article {
@@ -54,7 +75,7 @@ article {
 }
 footer {
     background-color: #373738;
-    height: 100px;
+    height: 25px;
 }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -86,9 +107,35 @@ hr {
 
 }
 h1 {
-    font-family: 'Oleo Script', cursive;
+   font-family: 'Flamenco', cursive;
+    font-size: 100px;
+    margin-left: 35%;
+    position: fixed;
+
+
 }
 
+#intro h2 {
+     font-family: 'Flamenco', cursive;
+     font-size: 20px;
+     position: fixed;
+     margin-left: 40%;
+     
+
+
+}
+#intro h3 {
+    color: black;
+     font-family: 'Flamenco', cursive;
+     font-size: 28px;
+     position: fixed;
+      margin-left: 40%;
+      margin-top: 55%;
+      background-color: gray;
+    
+
+
+}
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
