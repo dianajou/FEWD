@@ -16,6 +16,7 @@ input,
 select,
 textarea {
     color: #222;
+    background-color: #373738;
 }
 
 body {
@@ -26,6 +27,13 @@ body {
      font-family: 'Flamenco', cursive;
 }
 
+article{
+    font-family: arial;
+    font-size: 12px;
+    padding: 30px;
+    text-align: center;
+    color: black;
+}
 header {
     background-color: #373738;
     height: 65px;
@@ -40,38 +48,101 @@ header p {
     margin-left: 80%;
 }
 
-#intro {
-    height: 800px;
+div#bottom-side-nav {
+width:58px;
+height:525px;
+position:fixed;
+top:50%;
+left:0;
+background:rgba(255,255,255,0.3);
+z-index:99;
+border-radius:0 30px 30px 0;
+overflow:hidden;
+opacity:0.5;
+display:block!important;
+margin:-262.5px auto auto;
+padding:0;
+}
+
+.sideNavText {
+display:none;
+fill:grey;
+font-size:14px;
+font-weight:700;
+font-family:kulturista-web-1,kulturista-web-2,Georgia,'Century Schoolbook','Times New Roman',Times,serif!important;
+}
+
+
+#home {
+    height: 700px;
     width: 100%;
     background-color: #373738;
     background-image:url('../images/tram1-5.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    
+
+}
+ 
+#about { 
+background: url('../images/tram1-6.jpg');  
+
+
+}
+
+#about article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%; 
+}
+
+#home h2 {
+     font-family: 'Flamenco', cursive;
+     font-size: 20px;
+     position: fixed;
+     margin-left:40%;
+     
+
+
+}
+#home h3 {
+    color: black;
+     font-family: 'Flamenco', cursive;
+     font-size: 28px;
+     position: fixed;
+     margin-left:40%;
+      margin-top: 55%;
+      background-color: gray;
 
 }
 #panels{
-    margin-top: 100px;
-    height: 600px;
-    width: 3600px;
+    margin-top: 7%;
+    height: 500px;
+    width: 3660px;
     overflow: hidden;
     background-color: #373738;
 
 }
+
+#panels img{
+
+    padding: 10px;
+
+}
 #map{
-    position: fixed;
-    background-image:url('../images/map.png');
+  height: 199px; 
+  width: 3660px;
+  background-image: url('../images/map.png');
+  background-repeat: repeat;
 
-
+   
 }
 
-#map img{
-
-}
 
 article {
     float: left;
-    width: 600px;
+
 }
 footer {
     background-color: #373738;
@@ -97,6 +168,10 @@ footer {
  * A better looking default horizontal rule
  */
 
+
+}
+
+
 hr {
     display: block;
     height: 1px;
@@ -108,34 +183,10 @@ hr {
 }
 h1 {
    font-family: 'Flamenco', cursive;
-    font-size: 100px;
+    font-size: 120px;
     margin-left: 35%;
     position: fixed;
 
-
-}
-
-#intro h2 {
-     font-family: 'Flamenco', cursive;
-     font-size: 20px;
-     position: fixed;
-     margin-left: 40%;
-     
-
-
-}
-#intro h3 {
-    color: black;
-     font-family: 'Flamenco', cursive;
-     font-size: 28px;
-     position: fixed;
-      margin-left: 40%;
-      margin-top: 55%;
-      background-color: gray;
-    
-
-
-}
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
@@ -176,6 +227,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 
 
 
