@@ -9,3 +9,15 @@
  *    be typed in it. 
  *    Hint, remeber what event.preventDefault() does? 
  */
+
+$('#noVowels').keypress(function(event){
+
+
+	var key = event.keyCode;
+	if (key == 97 ){
+			event.preventDefault();
+	}
+ $('#justPressed').text(String.fromCharCode(event.keyCode));
+
+});
+

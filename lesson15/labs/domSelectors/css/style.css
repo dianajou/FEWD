@@ -25,3 +25,7 @@ h3 {
 dt {
   font-weight: bold;
 }
+
+#mousebox.click{
+  background-color: red;
+}
