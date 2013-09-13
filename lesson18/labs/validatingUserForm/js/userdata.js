@@ -13,5 +13,33 @@
  */
 
 $(document).ready(function(){
+
+$('#user_name_error').hide();
+$('#user_age_error').hide();
+$('#user_ph_error').hide();
+$('#user_email_error').hide();
+
+	$('input[type="submit"]').click(function(event){
+		event.preventDefault();
 		
+		var name = $('#user_name').val();
+		var age = $('#user_age').val();
+		var phone = $('#user_ph').val();
+		var email = $('#user_email').val();
+
+if (name.length < 3) {
+	$('#user_name_error').show(); 
+
+		}else{
+			$('#user_name_error').hide();
+		}
+
+if (isNan(age)) {
+	$('#user_age_error').show();
+} else {
+	$('#user_age_error').hide();
+}
+
+
+	});
 });

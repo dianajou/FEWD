@@ -1,19 +1,17 @@
 $(document).ready(function(){
     $('section[data-type="background"]').each(function(){
-        var $bgobj = $(this); // assigning the object
+        // var $bgobj = $(this); // assigning the object
      
-        $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        // $(window).scroll(function() {
+        //     var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
              
-            // Put together our final background position
-            var coords = '50% '+ yPos + 'px';
+        //     // Put together our final background position
+        //     var coords = '50% '+ yPos + 'px';
  
-            // Move the background
-            $bgobj.css({ backgroundPosition: coords });
-        }); 
+        //     // Move the background
+        //     $bgobj.css({ backgroundPosition: coords });
+        // }); 
     });    
-}); 
-
 
     /*
     function labelCircle( circleObj, text  )
@@ -26,36 +24,43 @@ $(document).ready(function(){
 
     labelCircle(circles[0],"Test"); */
 
-    navCircles[0].click(function () {
-        $('html, body').animate({scrollTop: $("#intro").offset().top}, 500);
-    });
+    // navCircles[0].click(function () {
+    //     $('html, body').animate({scrollTop: $("#intro").offset().top}, 500);
+    // });
 
-    navCircles[1].click(function () {
-        $('html, body').animate({scrollTop: $("#depratio").offset().top}, 500);
-    });
+    // navCircles[1].click(function () {
+    //     $('html, body').animate({scrollTop: $("#depratio").offset().top}, 500);
+    // });
 
-    navCircles[2].click(function () {
-        $('html, body').animate({scrollTop: $("#fertility").offset().top}, 500);
-    });
+    // navCircles[2].click(function () {
+    //     $('html, body').animate({scrollTop: $("#fertility").offset().top}, 500);
+    // });
 
-    navCircles[3].click(function () {
-        $('html, body').animate({scrollTop: $("#lifeexp").offset().top}, 500);
-    });
+    // navCircles[3].click(function () {
+    //     $('html, body').animate({scrollTop: $("#lifeexp").offset().top}, 500);
+    // });
 
-    navCircles[4].click(function () {
-        $('html, body').animate({scrollTop: $("#money").offset().top}, 500);
-    });
+    // navCircles[4].click(function () {
+    //     $('html, body').animate({scrollTop: $("#money").offset().top}, 500);
+    // });
 
-    navCircles[5].click(function () {
-        $('html, body').animate({scrollTop: $("#share").offset().top}, 500);
-    });
+    // navCircles[5].click(function () {
+    //     $('html, body').animate({scrollTop: $("#share").offset().top}, 500);
+    // });
 });
 
-function selectNav(id) {
-    navCircles.attr({r: navNormal, fill: navNormalColor});
-    navCircles[id].attr({r: navZoom, fill: navZoomColor});
-    selected = navCircles[id];
-}
+$('#home-container').on('click', function(){
+    $(this).slideToggle()
+})
+
+
+// function selectNav(id) {
+//     navCircles.attr({r: navNormal, fill: navNormalColor});
+//     navCircles[id].attr({r: navZoom, fill: navZoomColor});
+//     selected = navCircles[id];
+// }
+
+
 
 var stations = [
 	{
@@ -65,13 +70,26 @@ var stations = [
 		media:'images/tram.jpg',
 		caption:'Fruits of the seas',
 	},{
-		name:'Sheung Wan',
+		name:'Tong Wan',
 		coordinates: [48.40129,8.3823],
 		sequence:67,
-		media:'images/tram.jpg',
+		media:'images/tram2.jpg',
 		caption:'Fruits of the seas',
 	}
 ]
+
+stations.each(
+    function(station){
+        $('#panels').append(
+            '<div class="panel">' +
+                '<img src="' + station.media + '">' +
+                '<h1>' + station.name + '</h1>' +
+                '<p>' + station.caption + '</p>' +
+            '</div>'
+        )
+    }
+)
+
 
 var DingDing = (function(obj){
 	stations = obj.map(function(s){ return new Station(s)})

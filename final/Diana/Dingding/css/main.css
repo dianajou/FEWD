@@ -73,11 +73,19 @@ font-family:kulturista-web-1,kulturista-web-2,Georgia,'Century Schoolbook','Time
 }
 
 
+#home-container {
+  position: fixed;
+  background-image:url('../images/tram1-5.jpg');
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #home {
-    height: 700px;
+    height: px;
     width: 100%;
     background-color: #373738;
-    background-image:url('../images/tram1-5.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 

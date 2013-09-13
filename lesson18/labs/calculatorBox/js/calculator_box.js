@@ -22,6 +22,43 @@ var total = 0;
 $(function(){
 
 	//$(box to be updated).click(function call);
+ $('#a10').on('click', 10, update)
+ $('#a20').on('click', 20, update)
+ $('#a30').on('click', 30, update)
+ $('#n20').on('click', -10, update)
+ $('#n30').on('click', -30, update)
 
 
-});
+ });
+
+  // $('#a20').click(a20);
+  // $('#a30').click(a30);
+  // $('#red').click(red);
+
+
+
+
+function update(event){
+	total = total + event.data;
+	$('#out').text(total);
+}
+
+// function a10(){
+// 	total = total + 10;
+// 	$('#out').text(total);
+// }
+
+// function a20(){
+// 	total = total + 20;
+// 	$('#out').text(total);
+// }
+
+// function a30(){
+// 	total = total + 30;
+// 	$('#out').text(total);
+// }
+
+// function red(){
+	
+// 	$('#out').css('color', 'red');
+// }
