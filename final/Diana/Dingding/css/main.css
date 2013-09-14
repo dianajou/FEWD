@@ -25,7 +25,7 @@ body {
     color: white;
      background-color: #373738;
      font-family: 'Flamenco', cursive;
-     height: 1000px;
+     
 
      
 }
@@ -116,6 +116,21 @@ margin-top: 65px;
 
     padding: 10px;
 
+}
+
+.panel{
+   font-family: helvetica;
+  color: black;
+}
+
+.panel h1{
+font-size: 25px;
+}
+
+.panel p{
+  font-family: helvetica;
+  font-size: 18px;
+  color: black;
 }
 #map{
   height: 200px;
@@ -213,9 +228,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
 
 
 

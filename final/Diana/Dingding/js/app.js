@@ -7,29 +7,29 @@ $('#home_container').on('click', function(){
 
 var stations = [
 	{
+		name:'Kennedy Town',
+		coordinates: [48.40129,8.3823],
+		sequence:1,
+		media:'images/ktown.jpg',
+		caption:'Eastern port',
+	},{
 		name:'Sheung Wan',
 		coordinates: [48.40129,8.3823],
-		sequence:67,
-		media:'images/tram.jpg',
+		sequence:5,
+		media:'images/tram1-2.jpg',
 		caption:'Fruits of the seas',
 	},{
-		name:'Tong Wan',
-		coordinates: [48.40129,8.3823],
-		sequence:67,
-		media:'images/tram2.jpg',
-		caption:'Fruits of the seas',
-	},{
-        name:'Sheung Wan',
+        name:'Central',
         coordinates: [48.40129,8.3823],
-        sequence:67,
-        media:'images/tram.jpg',
-        caption:'Fruits of the seas',
+        sequence:10,
+        media:'images/tram1-3.jpg',
+        caption:'Activity',
     },{
-        name:'Tong Wan',
+        name:'Wan Chai',
         coordinates: [48.40129,8.3823],
-        sequence:67,
-        media:'images/tram2.jpg',
-        caption:'Fruits of the seas',
+        sequence:15,
+        media:'images/tram1-4.jpg',
+        caption:'Commerce',
     }
 
 ]
@@ -94,4 +94,4 @@ function Station(obj){
 
 
 var SheungWan = new Station(stations[0])
-
+});
