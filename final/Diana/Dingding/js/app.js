@@ -1,66 +1,9 @@
 $(document).ready(function(){
-    $('section[data-type="background"]').each(function(){
-        // var $bgobj = $(this); // assigning the object
-     
-        // $(window).scroll(function() {
-        //     var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-             
-        //     // Put together our final background position
-        //     var coords = '50% '+ yPos + 'px';
- 
-        //     // Move the background
-        //     $bgobj.css({ backgroundPosition: coords });
-        // }); 
-    });    
+   
 
-    /*
-    function labelCircle( circleObj, text  )
-    {
-        var textattr = { 'font-size': 10, fill: '#000', stroke: 'none', 'font-family': 'Arial,Helvetica,sans-serif', 'font-weight': 400 };
-        var bbox = circleObj.getBBox();
-        var textObj = circleObj.paper.text( bbox.x + bbox.width / 2, bbox.y + bbox.height / 2, text ).attr( textattr );
-        return textObj;
-    }
-
-    labelCircle(circles[0],"Test"); */
-
-    // navCircles[0].click(function () {
-    //     $('html, body').animate({scrollTop: $("#intro").offset().top}, 500);
-    // });
-
-    // navCircles[1].click(function () {
-    //     $('html, body').animate({scrollTop: $("#depratio").offset().top}, 500);
-    // });
-
-    // navCircles[2].click(function () {
-    //     $('html, body').animate({scrollTop: $("#fertility").offset().top}, 500);
-    // });
-
-    // navCircles[3].click(function () {
-    //     $('html, body').animate({scrollTop: $("#lifeexp").offset().top}, 500);
-    // });
-
-    // navCircles[4].click(function () {
-    //     $('html, body').animate({scrollTop: $("#money").offset().top}, 500);
-    // });
-
-    // navCircles[5].click(function () {
-    //     $('html, body').animate({scrollTop: $("#share").offset().top}, 500);
-    // });
-});
-
-$('#home-container').on('click', function(){
+$('#home_container').on('click', function(){
     $(this).slideToggle()
 })
-
-
-// function selectNav(id) {
-//     navCircles.attr({r: navNormal, fill: navNormalColor});
-//     navCircles[id].attr({r: navZoom, fill: navZoomColor});
-//     selected = navCircles[id];
-// }
-
-
 
 var stations = [
 	{
@@ -75,7 +18,20 @@ var stations = [
 		sequence:67,
 		media:'images/tram2.jpg',
 		caption:'Fruits of the seas',
-	}
+	},{
+        name:'Sheung Wan',
+        coordinates: [48.40129,8.3823],
+        sequence:67,
+        media:'images/tram.jpg',
+        caption:'Fruits of the seas',
+    },{
+        name:'Tong Wan',
+        coordinates: [48.40129,8.3823],
+        sequence:67,
+        media:'images/tram2.jpg',
+        caption:'Fruits of the seas',
+    }
+
 ]
 
 stations.each(

@@ -25,6 +25,9 @@ body {
     color: white;
      background-color: #373738;
      font-family: 'Flamenco', cursive;
+     height: 1000px;
+
+     
 }
 
 article{
@@ -40,80 +43,53 @@ header {
     position: fixed;
     top: 0;
     width: 100%
+
 }
 
 header p {
-    float: left;
-    padding-left: 20px;
-    margin-left: 80%;
+  float: left;
+  margin-left: 20%;
 }
 
-div#bottom-side-nav {
-width:58px;
-height:525px;
-position:fixed;
-top:50%;
-left:0;
-background:rgba(255,255,255,0.3);
-z-index:99;
-border-radius:0 30px 30px 0;
-overflow:hidden;
-opacity:0.5;
-display:block!important;
-margin:-262.5px auto auto;
-padding:0;
+h1 {
+   font-family: 'Flamenco', cursive;
+    font-size: 120px;
+    margin-left: 35%;
+    position: fixed;
 }
 
-.sideNavText {
-display:none;
-fill:grey;
-font-size:14px;
-font-weight:700;
-font-family:kulturista-web-1,kulturista-web-2,Georgia,'Century Schoolbook','Times New Roman',Times,serif!important;
+h3 {
+    margin-left: 10%;
+    font-size: 15px;   
+}
+
+h4 {
+
+  font-size: 12px;
 }
 
 
-#home-container {
-  position: fixed;
-  background-image:url('../images/tram1-5.jpg');
-  height: 600px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 #home {
-    height: px;
-    width: 100%;
-    background-color: #373738;
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-}
+  height: 600px;
  
-#about { 
-background: url('../images/tram1-6.jpg');  
-
+ background-image:url('../images/tram1-5.jpg');
+ background-repeat: no-repeat;
+  background-size: cover;
 
 }
-
-#about article { 
-  height: 458px; 
-  position: absolute; 
-  text-align: center; 
-  top: 150px; 
-  width: 100%; 
+#home-container {
+margin-top: 65px;
 }
+
+
 
 #home h2 {
      font-family: 'Flamenco', cursive;
      font-size: 20px;
      position: fixed;
      margin-left:40%;
-     
-
-
-}
+     }
 #home h3 {
     color: black;
      font-family: 'Flamenco', cursive;
@@ -124,29 +100,36 @@ background: url('../images/tram1-6.jpg');
       background-color: gray;
 
 }
+
+#bottom{
+
+}
 #panels{
-    margin-top: 7%;
+    
+   width: 3900px;
     height: 500px;
-    width: 3660px;
     overflow: hidden;
     background-color: #373738;
 
 }
-
 #panels img{
 
     padding: 10px;
 
 }
 #map{
-  height: 199px; 
-  width: 3660px;
+  height: 200px;
+  width: 100%;
   background-image: url('../images/map.png');
-  background-repeat: repeat;
 
-   
 }
 
+
+#map-container{
+ 
+  position: fixed;
+
+}
 
 article {
     float: left;
@@ -189,11 +172,6 @@ hr {
     padding: 0;
 
 }
-h1 {
-   font-family: 'Flamenco', cursive;
-    font-size: 120px;
-    margin-left: 35%;
-    position: fixed;
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
