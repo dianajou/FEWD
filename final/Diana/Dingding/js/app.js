@@ -46,7 +46,7 @@ stations.each(
     function(station){
         $('#panels').append(
             '<div class="panel">' +
-                '<img src="' + station.media + '">' +
+               
                 '<h1>' + station.name + '</h1>' +
                 '<p>' + station.caption + '</p>' +
             '</div>'
