@@ -10,25 +10,33 @@ var stations = [
 		name:'Kennedy Town',
 		coordinates: [48.40129,8.3823],
 		sequence:1,
-		media:'images/ktown.jpg',
+		media:'images/tram1.jpg',
 		caption:'Eastern port',
-	},{
-		name:'Sheung Wan',
-		coordinates: [48.40129,8.3823],
-		sequence:5,
-		media:'images/tram1-2.jpg',
-		caption:'Fruits of the seas',
 	},{
         name:'Central',
         coordinates: [48.40129,8.3823],
         sequence:10,
-        media:'images/tram1-3.jpg',
+        media:'images/tram1-2.jpg',
         caption:'Activity',
     },{
         name:'Wan Chai',
         coordinates: [48.40129,8.3823],
-        sequence:15,
+        sequence:20,
+        media:'images/tram1-3.jpg',
+        caption:'Commerce',
+    }
+    ,{
+        name:'Fortress Hill',
+        coordinates: [48.40129,8.3823],
+        sequence:25,
         media:'images/tram1-4.jpg',
+        caption:'Commerce',
+    }
+    ,{
+        name:'Chai Wan',
+        coordinates: [48.40129,8.3823],
+        sequence:30,
+        media:'images/tram1-5.jpg',
         caption:'Commerce',
     }
 

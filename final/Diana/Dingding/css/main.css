@@ -24,9 +24,7 @@ body {
     line-height: 1.4;
     color: white;
      background-color: #373738;
-     font-family: 'Flamenco', cursive;
-     
-
+     font-family: 'Flamenco', cursive;   
      
 }
 
@@ -106,10 +104,11 @@ margin-top: 65px;
 }
 #panels{
     
-   width: 3900px;
-    height: 500px;
-    overflow: hidden;
-    background-color: #373738;
+width: 3900px;
+ overflow: hidden;
+background-color: #373738;
+ float: left;
+    
 
 }
 #panels img{
@@ -121,9 +120,13 @@ margin-top: 65px;
 .panel{
    font-family: helvetica;
   color: black;
+  float: left;
+
 }
 
 .panel h1{
+  width: 200px;
+  height: 100px;
 font-size: 25px;
 }
 
@@ -131,6 +134,7 @@ font-size: 25px;
   font-family: helvetica;
   font-size: 18px;
   color: black;
+  width: 100px;
 }
 #map{
   height: 200px;
@@ -146,10 +150,7 @@ font-size: 25px;
 
 }
 
-article {
-    float: left;
 
-}
 footer {
     background-color: #373738;
     height: 25px;
@@ -175,7 +176,6 @@ footer {
  */
 
 
-}
 
 
 hr {
