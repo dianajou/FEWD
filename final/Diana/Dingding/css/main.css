@@ -102,43 +102,43 @@ margin-top: 65px;
 #bottom{
 
 }
-#panels{
-    
-width: 3900px;
- overflow: hidden;
-background-color: #373738;
- float: left;
-    
 
-}
-#panels img{
-
-    padding: 10px;
-
+#bottom {
+  overflow-x: scroll;
 }
 
-.panel{
-  background-image: ;
-   font-family: helvetica;
-  color: black;
+#panels {
+  width: 3900px;
+}
+
+.panel {
+  width: 700px;
+  height: 500px;
   float: left;
-  background-color: gray;
+  padding: 30px;
+}
+
+.panel img {
+
 
 }
 
-.panel h1{
-
-font-size: 15px;
-
+.panel h4 {
+  position: relative;
+  margin-top: -5%;
+  margin-left: 10%;
+  font-size: 15px;
 }
 
-.panel p{
-
-  font-size: 18px;
-
-  margin-top: -100px;
-  margin-left: 100px;
+.panel p {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 0px;
+  font-size: 15px;
 }
+
+
+
 #map{
   height: 200px;
   width: 100%;

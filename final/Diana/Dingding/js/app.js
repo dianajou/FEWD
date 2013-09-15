@@ -1,18 +1,24 @@
+
+
 $(document).ready(function(){
-   
+
+    // make the #bottom width fix the viewport size.
+    $(window).resize(function() {
+        $('#bottom').css('width', window.innerWidth+'px');
+    });
 
 $('#home_container').on('click', function(){
     $(this).slideToggle()
 })
 
 var stations = [
-	{
-		name:'Kennedy Town',
-		coordinates: [48.40129,8.3823],
-		sequence:1,
-		media:'images/tram1.jpg',
-		caption:'Eastern port',
-	},{
+    {
+        name:'Kennedy Town',
+        coordinates: [48.40129,8.3823],
+        sequence:1,
+        media:'images/tram1.jpg',
+        caption:'Eastern port',
+    },{
         name:'Central',
         coordinates: [48.40129,8.3823],
         sequence:10,
@@ -44,10 +50,12 @@ var stations = [
 
 stations.each(
     function(station){
+
+        // use h4 instead of h1 for station.name
         $('#panels').append(
             '<div class="panel">' +
-               
-                '<h1>' + station.name + '</h1>' +
+                '<img src="' + station.media + '">' +
+                '<h4>' + station.name + '</h4>' + 
                 '<p>' + station.caption + '</p>' +
             '</div>'
         )
@@ -56,48 +64,48 @@ stations.each(
 
 
 var DingDing = (function(obj){
-	stations = obj.map(function(s){ return new Station(s)})
-	// We use the stations || {} to pass in the stations variable that you've defined,
-	// or (||) if it can't find it it will pass an empty object and your script won't 
-	// because of it! :)
-	return {
-		stations : stations
-	}
+    stations = obj.map(function(s){ return new Station(s)})
+    // We use the stations || {} to pass in the stations variable that you've defined,
+    // or (||) if it can't find it it will pass an empty object and your script won't 
+    // because of it! :)
+    return {
+        stations : stations
+    }
 }(stations || {}))
 
 function Station(obj){
-	for (var prop in obj) {
-		if (obj.hasOwnProperty(prop)) {
-			this[prop] = obj[prop];
-		}
-	}
-   	// If we user CLASS.prototype.METHOD it is only stored
-   	// once in memory but we can use it for all objects that
-   	// are created
-   	Station.prototype.toString = function() {
-   		return this.name + ' @ [' + this.coordinates.toString() + ']'
-   	};
-	
-	Station.prototype.print = function(msg){
-		console.log(msg);
-	}
+    for (var prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            this[prop] = obj[prop];
+        }
+    }
+    // If we user CLASS.prototype.METHOD it is only stored
+    // once in memory but we can use it for all objects that
+    // are created
+    Station.prototype.toString = function() {
+        return this.name + ' @ [' + this.coordinates.toString() + ']'
+    };
+    
+    Station.prototype.print = function(msg){
+        console.log(msg);
+    }
 
-	Station.prototype.visitNext = function(){
-		DingDing.stations.map(function(s){
-			s.sequence - this.sequence
-		})
-	}
+    Station.prototype.visitNext = function(){
+        DingDing.stations.map(function(s){
+            s.sequence - this.sequence
+        })
+    }
 
-	Station.prototype.visitPrev = function(){
-		DingDing.stations.map(function(s){
-			this.sequence - s.sequence
-		})
-	}
+    Station.prototype.visitPrev = function(){
+        DingDing.stations.map(function(s){
+            this.sequence - s.sequence
+        })
+    }
 
-	Station.prototype.panel = function() {
-		stationHTML = '<section><h2>' + this.name + '</h2><img class="stationImage">' + this.media + '</img><p>'+ this.caption+ '</p></setion>'
-		$('#panels').append(stationHTML)
-	};
+    Station.prototype.panel = function() {
+        stationHTML = '<section><h2>' + this.name + '</h2><img class="stationImage">' + this.media + '</img><p>'+ this.caption+ '</p></setion>'
+        $('#panels').append(stationHTML)
+    };
 }
 
 
