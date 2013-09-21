@@ -48,32 +48,38 @@ header p {
   float: left;
   margin-left: 20%;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 
 h1 {
    font-family: 'Flamenco', cursive;
     font-size: 120px;
-    margin-left: 35%;
+    margin-left: 5%;
+    margin-top: 0px;
     position: fixed;
 }
 
 h3 {
     margin-left: 10%;
-    font-size: 15px;   
+    font-size: 15px;
+    font-family: arial;   
 }
 
 h4 {
 
   font-size: 12px;
+  margin-left: 10%
 }
 
 
 
 #home {
-  height: 600px;
- 
- background-image:url('../images/tram1-5.jpg');
- background-repeat: no-repeat;
-  background-size: cover;
+height: 600px;
+background-image:url('../images/tram1-5.jpg');
+background-repeat: no-repeat;
+background-size: cover;
 
 }
 #home-container {
@@ -88,15 +94,21 @@ margin-top: 65px;
      position: fixed;
      margin-left:40%;
      }
+
 #home h3 {
     color: black;
      font-family: 'Flamenco', cursive;
      font-size: 28px;
      position: fixed;
-     margin-left:40%;
-      margin-top: 55%;
+     margin-left:45%;
+      margin-top: 50%;
       background-color: gray;
+}
 
+#middle h3{
+font-family: 'Noto Sans', sans-serif;
+
+ font-size: 14px; 
 }
 
 #bottom{
@@ -115,7 +127,7 @@ margin-top: 65px;
   width: 700px;
   height: 500px;
   float: left;
-  padding: 30px;
+  padding: 10px;
 }
 
 .panel img {
@@ -133,7 +145,7 @@ margin-top: 65px;
 .panel p {
   position: relative;
   margin-left: 10%;
-  margin-top: 0px;
+  margin-top: -5px;
   font-size: 15px;
 }
 
@@ -143,12 +155,54 @@ margin-top: 65px;
   height: 200px;
   width: 100%;
   background-image: url('../images/map.png');
+  position: relative;
+  color: black;
+  font-size: 1.5em;
 
 }
 
+#map h4{
+  color: black;
+  font-family: arial;
+  font-size: 14px;
+  padding-top: 15px;
+
+}
+
+.kennedytown{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 120px;
+  background-color: gray;
+
+}
+.central{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 320px;
+  background-color: gray;
+}
+.wanchai{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 520px;
+  background-color: gray;
+}
+.fortresshill{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 720px;
+  background-color: gray;
+}
+.chaiwan{
+    position: absolute;
+  margin-top: 50px;
+  margin-left: 1080px;
+background-color: gray;
+}
 
 #map-container{
- 
+
   position: fixed;
 
 }

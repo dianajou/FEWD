@@ -7,7 +7,7 @@ $(document).ready(function(){
         $('#bottom').css('width', window.innerWidth+'px');
     });
 
-$('#home_container').on('click', function(){
+$('#home-container').on('click', function(){
     $(this).slideToggle()
 })
 
@@ -54,7 +54,7 @@ stations.each(
         // use h4 instead of h1 for station.name
         $('#panels').append(
             '<div class="panel">' +
-                '<img src="' + station.media + '">' +
+                '<img id="img-' + station.sequence + '" src="' + station.media + '">' +
                 '<h4>' + station.name + '</h4>' + 
                 '<p>' + station.caption + '</p>' +
             '</div>'
@@ -103,7 +103,7 @@ function Station(obj){
     }
 
     Station.prototype.panel = function() {
-        stationHTML = '<section><h2>' + this.name + '</h2><img class="stationImage">' + this.media + '</img><p>'+ this.caption+ '</p></setion>'
+        stationHTML = '<section><h2>' + this.name + '</h2><img class="stationImage">' + this.media + '</img><p>'+ this.caption+ '</p></section>'
         $('#panels').append(stationHTML)
     };
 }
@@ -111,3 +111,7 @@ function Station(obj){
 
 var SheungWan = new Station(stations[0])
 });
+
+
+
+
