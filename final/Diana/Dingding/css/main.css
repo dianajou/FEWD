@@ -22,7 +22,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    color: white;
+    color:white;
      background-color: #373738;
      font-family: 'Flamenco', cursive;   
      
@@ -55,7 +55,7 @@ a {
 
 h1 {
    font-family: 'Flamenco', cursive;
-    font-size: 120px;
+    font-size: 100px;
     margin-left: 5%;
     margin-top: 0px;
     position: fixed;
@@ -77,7 +77,7 @@ h4 {
 
 #home {
 height: 600px;
-background-image:url('../images/tram1-5.jpg');
+background-image:url('../images/tram.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -107,12 +107,13 @@ margin-top: 65px;
 
 #middle h3{
 font-family: 'Noto Sans', sans-serif;
-
+margin-right: 7%;
  font-size: 14px; 
+
 }
 
 #bottom{
-
+ 
 }
 
 #bottom {
@@ -120,7 +121,7 @@ font-family: 'Noto Sans', sans-serif;
 }
 
 #panels {
-  width: 3900px;
+  width: 7990px;
 }
 
 .panel {
@@ -128,6 +129,7 @@ font-family: 'Noto Sans', sans-serif;
   height: 500px;
   float: left;
   padding: 10px;
+
 }
 
 .panel img {
@@ -140,6 +142,7 @@ font-family: 'Noto Sans', sans-serif;
   margin-top: -5%;
   margin-left: 10%;
   font-size: 15px;
+
 }
 
 .panel p {
@@ -147,6 +150,7 @@ font-family: 'Noto Sans', sans-serif;
   margin-left: 10%;
   margin-top: -5px;
   font-size: 15px;
+
 }
 
 
@@ -156,22 +160,23 @@ font-family: 'Noto Sans', sans-serif;
   width: 100%;
   background-image: url('../images/map.png');
   position: relative;
-  color: black;
-  font-size: 1.5em;
+  font-family: 'Noto Sans', sans-serif;
+
+
 
 }
 
 #map h4{
   color: black;
-  font-family: arial;
-  font-size: 14px;
-  padding-top: 15px;
+font-family: 'Noto Sans', sans-serif;
+
+
 
 }
 
-.kennedytown{
-  position: absolute;
-  margin-top: 10px;
+.west{
+position: absolute;
+
   margin-left: 120px;
   background-color: gray;
 
@@ -188,16 +193,16 @@ font-family: 'Noto Sans', sans-serif;
   margin-left: 520px;
   background-color: gray;
 }
-.fortresshill{
+.quarry{
   position: absolute;
   margin-top: 50px;
   margin-left: 720px;
   background-color: gray;
 }
-.chaiwan{
+.east{
     position: absolute;
   margin-top: 50px;
-  margin-left: 1080px;
+  margin-left: 1000px;
 background-color: gray;
 }
 

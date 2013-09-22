@@ -13,39 +13,72 @@ $('#home-container').on('click', function(){
 
 var stations = [
     {
-        name:'Kennedy Town',
+        name:'Kennedy Town Terminus',
         coordinates: [48.40129,8.3823],
-        sequence:1,
-        media:'images/tram1.jpg',
-        caption:'Eastern port',
+        sequence:2,
+        media:'images/tram-2.jpg',
+        caption:'Tung Wan Smallpox Hospital',
+    },{
+        name:'North Street',
+        coordinates: [48.40129,8.3823],
+        sequence:3,
+        media:'images/tram-3.jpg',
+        caption:'Golden light',
+    },{
+        name:'Kennedy Town Ladies',
+        coordinates: [48.40129,8.3823],
+        sequence:4,
+        media:'images/tram-4.jpg',
+        caption:'Lunch time',
+    },{
+        name:'Urban Plants',
+        coordinates: [48.40129,8.3823],
+        sequence:5,
+        media:'images/tram-5.jpg',
+        caption:'City decor',
+    },{
+        name:'Skek Tong Tsui Terminus',
+        coordinates: [48.40129,8.3823],
+        sequence:6,
+        media:'images/tram-6.jpg',
+        caption:'Water',
     },{
         name:'Central',
         coordinates: [48.40129,8.3823],
-        sequence:10,
-        media:'images/tram1-2.jpg',
-        caption:'Activity',
+        sequence:7,
+        media:'images/tram-7.jpg',
+        caption:'Eastern port',
+    },{
+        name:'HSBC',
+        coordinates: [48.40129,8.3823],
+        sequence:8,
+        media:'images/tram-8.jpg',
+        caption:'Sunday Holiday'
     },{
         name:'Wan Chai',
         coordinates: [48.40129,8.3823],
-        sequence:20,
-        media:'images/tram1-3.jpg',
-        caption:'Commerce',
-    }
-    ,{
-        name:'Fortress Hill',
+        sequence:9,
+        media:'images/tram-9.jpg',
+        caption:'Old lady',
+    },{
+        name:'Causeway Bay',
         coordinates: [48.40129,8.3823],
-        sequence:25,
-        media:'images/tram1-4.jpg',
-        caption:'Commerce',
-    }
-    ,{
+        sequence:10,
+        media:'images/tram-10.jpg',
+        caption:'White Flower Oil',
+    },{
+        name:'Hoi Foo Street',
+        coordinates: [48.40129,8.3823],
+        sequence:11,
+        media:'images/tram-11.jpg',
+        caption:'Twins',
+    },{
         name:'Chai Wan',
         coordinates: [48.40129,8.3823],
-        sequence:30,
-        media:'images/tram1-5.jpg',
-        caption:'Commerce',
+        sequence:12,
+        media:'images/tram-12.jpg',
+        caption:'Chai Wan Road, the end',
     }
-
 ]
 
 stations.each(
