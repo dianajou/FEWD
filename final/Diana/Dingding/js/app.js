@@ -17,13 +17,13 @@ var stations = [
         coordinates: [48.40129,8.3823],
         sequence:2,
         media:'images/tram-2.jpg',
-        caption:'Tung Wan Smallpox Hospital',
+        caption:'Near the bus terminus the Tung Wan Smallpox Hospital',
     },{
         name:'North Street',
         coordinates: [48.40129,8.3823],
         sequence:3,
         media:'images/tram-3.jpg',
-        caption:'Golden light',
+        caption:'First stop in Kennedy Town',
     },{
         name:'Kennedy Town Ladies',
         coordinates: [48.40129,8.3823],
